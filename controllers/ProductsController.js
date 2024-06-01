@@ -46,13 +46,13 @@ module.exports.createProduct = async(req,res)=>{
         }
         const newProduct = await ProductSchema.create({
             id:id,
-            name,
-            image,
-            category,
-            new_price,
-            old_price,
-            date,
-            available
+            name:name,
+            image:image,
+            category:category,
+            new_price:new_price,
+            old_price:old_price,
+            date:date,
+            available:available
         });
         console.log("new Product:",newProduct);
         await newProduct.save();

@@ -7,23 +7,23 @@ const ProductSchema = new mongoose.Schema({
     },
     name:{
         type:String,
-        required: true
+        required: true,
     },
     image:{
         type:String,
-        required:true
+        required:true,
     },
     category:{
         type:String,
-        required:true
+        required:true,
     },
     new_price:{
         type:Number,
-        required:true
+        required:true,
     },
     old_price:{
         type:Number,
-        required:true
+        required:true,
     },
     date:{
         type:Date,
@@ -31,7 +31,7 @@ const ProductSchema = new mongoose.Schema({
     },
     available:{
         type:Boolean,
-        default:true
+        default:true,
     }
 })
 module.exports=mongoose.model('Products',ProductSchema);
